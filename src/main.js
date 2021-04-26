@@ -8,7 +8,8 @@ import vueresource from "vue-resource";
 
 Vue.use(vueresource);
 
-Vue.http.options.root = "http://cadastro-app.herokuapp.com/";
+Vue.http.options.root = "https://cadastro-app.herokuapp.com/";
+Vue.http.headers.common["Content-Type"] = "application/json";
 
 Vue.config.productionTip = false;
 
